@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginVertical="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="2dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <ImageView
+        android:id="@+id/image_book"
+        android:layout_width="70dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="70dp"
+        android:padding="4dp"
+        android:src="@drawable/ic_baseline_menu_book_24"
+        android:scaleType="centerCrop"
+        app:strokeWidth="3dp" />
+
+    <TextView
+        android:id="@+id/title_book"
+        tools:text="Casa Blanca"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/image_book"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="10dp"
+        android:textSize="22sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/author_book"
+        app:layout_constraintStart_toStartOf="@id/title_book"
+        app:layout_constraintTop_toBottomOf="@id/title_book"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="20sp"
+        tools:text="Lisa"
+        android:textColor="@color/red_more"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+
+    <TextView
+        android:id="@+id/description_book"
+        app:layout_constraintStart_toStartOf="@id/author_book"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/author_book"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:textSize="15sp"
+        tools:text="efefew"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

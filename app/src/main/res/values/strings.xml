@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">BooksNy</string>
+
+    <string name="books_title">Books</string>
+    <string name="books_error">Oops! Algo de errado aconteceu!</string>
+    <string name="books_description">Details</string>
+    <string name="book_details_title_label">Title</string>
+    <string name="book_details_description_label">Description</string>
+</resources>
